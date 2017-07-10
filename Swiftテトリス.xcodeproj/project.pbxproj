@@ -27,6 +27,7 @@
 		3B9B4E221F139A670032CFF8 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4E211F139A670032CFF8 /* SShape.swift */; };
 		3B9B4E241F139A7F0032CFF8 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4E231F139A7F0032CFF8 /* ZShape.swift */; };
 		3B9B4E261F139B340032CFF8 /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B4E251F139B340032CFF8 /* Swiftris.swift */; };
+		3B9B4E281F13CA9F0032CFF8 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 3B9B4E271F13CA9F0032CFF8 /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3B9B4E211F139A670032CFF8 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
 		3B9B4E231F139A7F0032CFF8 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
 		3B9B4E251F139B340032CFF8 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
+		3B9B4E271F13CA9F0032CFF8 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				3B4DBC541F13948400C20436 /* Assets.xcassets */,
 				3B4DBC561F13948400C20436 /* LaunchScreen.storyboard */,
 				3B4DBC591F13948400C20436 /* Info.plist */,
+				3B9B4E271F13CA9F0032CFF8 /* Sounds */,
 				3B9B4E0F1F1395F50032CFF8 /* Sprites.atlas */,
 				3B9B4E111F13972A0032CFF8 /* Array2D.swift */,
 				3B9B4E131F1397F40032CFF8 /* Block.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9B4E281F13CA9F0032CFF8 /* Sounds in Resources */,
 				3B4DBC581F13948400C20436 /* LaunchScreen.storyboard in Resources */,
 				3B4DBC551F13948400C20436 /* Assets.xcassets in Resources */,
 				3B9B4E101F1395F50032CFF8 /* Sprites.atlas in Resources */,
