@@ -12,11 +12,13 @@ import SpriteKit
 class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognizerDelegate {
     
     var scene: GameScene!
-    
     var swiftris:Swiftris!
-    
     var panPointReference:CGPoint?
-
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

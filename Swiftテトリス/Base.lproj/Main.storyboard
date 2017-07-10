@@ -79,6 +79,10 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="levelLabel" destination="oL0-nm-RfJ" id="A4r-et-UjE"/>
+                        <outlet property="scoreLabel" destination="GfT-am-c05" id="5Nd-5Y-G1j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="2cB-At-Sxt">
