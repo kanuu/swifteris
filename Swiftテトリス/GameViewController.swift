@@ -127,6 +127,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         view.userInteractionEnabled = false
         scene.stopTicking()
         
+        scene.playSound("Sounds/gameover.mp3")
         scene.animateCollapsingLines(swiftris.removeAllBlocks(), fallenBlocks: swiftris.removeAllBlocks()) {
             swiftris.beginGame()
         }
@@ -139,20 +140,21 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         } else if scene.tickLengthMillis > 50 {
             scene.tickLengthMillis -= 50
         }
+        scene.playSound("Sounds/levelup.mp3")
     }
     
     func gameShapeDidDrop(swiftris: Swiftris) {
         scene.stopTicking()
         scene.redrawShape(swiftris.fallingShape!) {
             swiftris.letShapeFall()
-        }        
+        }
+        scene.playSound("Sounds/drop.mp3")
     }
     
     func gameShapeDidLand(swiftris: Swiftris) {
         scene.stopTicking()
         
         self.view.userInteractionEnabled = false
-        
         // #10
         let removedLines = swiftris.removeCompletedLines()
         if removedLines.linesRemoved.count > 0 {
@@ -161,6 +163,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
                 // #11
                 self.gameShapeDidLand(swiftris)
             }
+            scene.playSound("Sounds/bomb.mp3")
         } else {
             nextShape()
         }
